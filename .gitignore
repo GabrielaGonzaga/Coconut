@@ -1,5 +1,8 @@
-# npm
 node_modules
-package-lock.json
-*.log
-*.gz
+.vscode
+build
+.env
+ormconfig.json
+
+tmp/*
+!tmp/.gitkeep
