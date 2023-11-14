@@ -1,0 +1,30 @@
+{
+  "name": "coconut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sever.ts",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielaGonzaga/Coconut.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielaGonzaga/Coconut/issues"
+  },
+  "homepage": "https://github.com/GabrielaGonzaga/Coconut#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.2.3",
+    "express": "^4.17.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0"
+  }
+}
