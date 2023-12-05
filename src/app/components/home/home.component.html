@@ -1,0 +1,176 @@
+<div class="main">
+  <div class="home-container">
+    <div class="home__header">
+      <img src="../../../assets/logo.png" alt="" />
+      <div class="header_options">
+        <div class="user_avatar" style="width: 2.5rem; height: 2.5rem">
+          <img alt="" mat-card-avatar [src]="user?.avatar" />
+        </div>
+        <a href=""><i class="bx bxl-github bx-md"></i></a>
+        <a href=""><i class="bx bxl-linkedin-square bx-md"></i></a>
+        <a (click)="logout()"
+          ><i class="bx bx-log-out bx-md" style="color: rgb(246, 89, 89)"></i
+        ></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main_container">
+    <div class="post_container">
+      <div
+        class="user_avatar"
+        style="width: 4rem; height: 4rem; margin-right: 0"
+      >
+        <img alt="" mat-card-avatar [src]="user?.avatar" />
+      </div>
+      <div class="input-container">
+        <form #form="ngForm"  (ngSubmit)="postMessage(form)">
+          <input name="message" ngModel type="text" placeholder="Compartilhe uma experiência" />
+          <button type="submit" class="post_button"
+            ><i class="bx bxs-navigation bx-md"></i
+          ></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="main_container">
+    <div class="post">
+      <div class="post_header">
+        <div class="user_avatar" style="width: 4rem; height: 4rem">
+          <img alt="" mat-card-avatar [src]="user?.avatar" />
+        </div>
+        <h1>Expire</h1>
+      </div>
+      <hr />
+      <div class="post_header">
+        <p>
+          Ut aut pelit ea vid untotatior seratin imperit omnihilibus endi te
+          cones eos perchil evendion consequ assinventias dolorei cipsae in
+          recus debis nest am nectum quam ipiciet hiliquis aribusciunt. Lupta
+          diciendest unt aturiatior ad ma doles ut dolorrum volupta qui cus,
+          officab oritibus. Da inimil in comnis il es a nitiunde ni ommolorerum
+          volut et idisqui omnietur, nem resed molenimus eari corioreiur sin
+          numet velesequi verspietur.
+        </p>
+      </div>
+      <hr />
+      <form action="" class="post_form">
+        <div class="interactions">
+          <a> <i class="bx bxs-like bx-sm"></i>&nbsp; Curtir</a>
+          <a> <i class="bx bxs-comment bx-sm"></i>&nbsp; Comentar </a>
+          <a> <i class="bx bxs-share bx-sm"></i> &nbsp;Compartilhar</a>
+        </div>
+        <input type="text" placeholder="Compartilhe uma experiência" />
+      </form>
+    </div>
+    <div class="post">
+      <div class="post_header">
+        <!-- <img alt="" mat-card-avatar [src]="user?.avatar" /> -->
+        <h1>Expire</h1>
+      </div>
+      <hr />
+      <div class="post_header">
+        <p>
+          Ut aut pelit ea vid untotatior seratin imperit omnihilibus endi te
+          cones eos perchil evendion consequ assinventias dolorei cipsae in
+          recus debis nest am nectum quam ipiciet hiliquis aribusciunt. Lupta
+          diciendest unt aturiatior ad ma doles ut dolorrum volupta qui cus,
+          officab oritibus. Da inimil in comnis il es a nitiunde ni ommolorerum
+          volut et idisqui omnietur, nem resed molenimus eari corioreiur sin
+          numet velesequi verspietur.
+        </p>
+      </div>
+      <hr />
+      <form action="" class="post_form">
+        <div class="interactions">
+          <a> <i class="bx bxs-like bx-sm"></i>&nbsp; Curtir</a>
+          <a> <i class="bx bxs-comment bx-sm"></i>&nbsp; Comentar </a>
+          <a> <i class="bx bxs-share bx-sm"></i> &nbsp;Compartilhar</a>
+        </div>
+        <input type="text" placeholder="Compartilhe uma experiência" />
+      </form>
+    </div>
+    <div class="post">
+      <div class="post_header">
+        <!-- <img alt="" mat-card-avatar [src]="user?.avatar" /> -->
+        <h1>Expire</h1>
+      </div>
+      <hr />
+      <div class="post_header">
+        <p>
+          Ut aut pelit ea vid untotatior seratin imperit omnihilibus endi te
+          cones eos perchil evendion consequ assinventias dolorei cipsae in
+          recus debis nest am nectum quam ipiciet hiliquis aribusciunt. Lupta
+          diciendest unt aturiatior ad ma doles ut dolorrum volupta qui cus,
+          officab oritibus. Da inimil in comnis il es a nitiunde ni ommolorerum
+          volut et idisqui omnietur, nem resed molenimus eari corioreiur sin
+          numet velesequi verspietur.
+        </p>
+      </div>
+      <hr />
+      <form action="" class="post_form">
+        <div class="interactions">
+          <a> <i class="bx bxs-like bx-sm"></i>&nbsp; Curtir</a>
+          <a> <i class="bx bxs-comment bx-sm"></i>&nbsp; Comentar </a>
+          <a> <i class="bx bxs-share bx-sm"></i> &nbsp;Compartilhar</a>
+        </div>
+        <input type="text" placeholder="Compartilhe uma experiência" />
+      </form>
+    </div>
+    <div class="post">
+      <div class="post_header">
+        <!-- <img alt="" mat-card-avatar [src]="user?.avatar" /> -->
+        <h1>Expire</h1>
+      </div>
+      <hr />
+      <div class="post_header">
+        <p>
+          Ut aut pelit ea vid untotatior seratin imperit omnihilibus endi te
+          cones eos perchil evendion consequ assinventias dolorei cipsae in
+          recus debis nest am nectum quam ipiciet hiliquis aribusciunt. Lupta
+          diciendest unt aturiatior ad ma doles ut dolorrum volupta qui cus,
+          officab oritibus. Da inimil in comnis il es a nitiunde ni ommolorerum
+          volut et idisqui omnietur, nem resed molenimus eari corioreiur sin
+          numet velesequi verspietur.
+        </p>
+      </div>
+      <hr />
+      <form action="" class="post_form">
+        <div class="interactions">
+          <a> <i class="bx bxs-like bx-sm"></i>&nbsp; Curtir</a>
+          <a> <i class="bx bxs-comment bx-sm"></i>&nbsp; Comentar </a>
+          <a> <i class="bx bxs-share bx-sm"></i> &nbsp;Compartilhar</a>
+        </div>
+        <input type="text" placeholder="Compartilhe uma experiência" />
+      </form>
+    </div>
+    <div class="post">
+      <div class="post_header">
+        <!-- <img alt="" mat-card-avatar [src]="user?.avatar" /> -->
+        <h1>Expire</h1>
+      </div>
+      <hr />
+      <div class="post_header">
+        <p>
+          Ut aut pelit ea vid untotatior seratin imperit omnihilibus endi te
+          cones eos perchil evendion consequ assinventias dolorei cipsae in
+          recus debis nest am nectum quam ipiciet hiliquis aribusciunt. Lupta
+          diciendest unt aturiatior ad ma doles ut dolorrum volupta qui cus,
+          officab oritibus. Da inimil in comnis il es a nitiunde ni ommolorerum
+          volut et idisqui omnietur, nem resed molenimus eari corioreiur sin
+          numet velesequi verspietur.
+        </p>
+      </div>
+      <hr />
+      <form action="" class="post_form">
+        <div class="interactions">
+          <a> <i class="bx bxs-like bx-sm"></i>&nbsp; Curtir</a>
+          <a> <i class="bx bxs-comment bx-sm"></i>&nbsp; Comentar </a>
+          <a> <i class="bx bxs-share bx-sm"></i> &nbsp;Compartilhar</a>
+        </div>
+        <input type="text" placeholder="Compartilhe uma experiência" />
+      </form>
+    </div>
+  </div>
+</div>

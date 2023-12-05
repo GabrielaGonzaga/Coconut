@@ -1,0 +1,205 @@
+@import "../../../styles.scss";
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  width: 100%;
+  background-color: $body-color;
+}
+
+.main_container {
+  background-color: $body-color;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* HEADER SECTION */
+.home__header {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $header-color;
+  padding: 5px;
+  top: 0;
+  width: 100vw;
+  background-color: #3C3B3A;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.home__header a {
+  background-color: #3C3B3A;
+  cursor: pointer;
+}
+
+.home__header i {
+  color: #FFFF;
+  background-color: #3C3B3A;
+  margin-left: 1rem;
+}
+
+.post_container {
+  color: #FFFF;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  background-color: #3C3B3A;
+  width: 100%;
+  height: 8rem;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.input-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.input-container form{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input-container input {
+  width: 100%;
+  color: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #222;
+  outline: none;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.post_button{
+  cursor: pointer;
+}
+
+.post_button i{
+  rotate: 30px;
+  color: #A37954;
+}
+
+.post {
+  width: 100%;
+  background-color: #3C3B3A;
+  width: 100%;
+  height: 18rem;
+  border-radius: 8px;
+  margin-bottom: 4rem;
+}
+
+
+.post_header{
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  color: #FFF;
+  text-align: start;
+}
+
+.post_header h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.interactions{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  height: 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.interactions a{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.post_form {
+  width: 100%;
+}
+
+.post_form input {
+  width: 100%;
+  color: #ffffff;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #222;
+  outline: none;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.post hr {
+  width: 100%;
+  opacity: 0.1;
+  background-color: #515151;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.user_avatar{
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-color: #A37954;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_options{
+  display: flex;
+}
+
+button{
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
