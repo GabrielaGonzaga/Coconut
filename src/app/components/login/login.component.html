@@ -1,6 +1,3 @@
-
-<p>HSDKHSBKSA</p>
-
 <body>
   <div class="coconut-container">
     <div class="coconut-content">
@@ -29,31 +26,59 @@
     </form>
   </div>
   <div class="modal" id="myModal">
-    <div class="modal-content">
-      <!-- Conteúdo da modal -->
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2 class="coconut-text-modal">coconut.</h2>
-      <!-- Substituído "Create new account" por "coconut." -->
-      <div class="input-container-row">
-        <input type="text" placeholder="Full Name" id="fullName" />
+    <form #form="ngForm">
+      <div class="modal-content">
+        <!-- Conteúdo da modal -->
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 class="coconut-text-modal">coconut.</h2>
+        <!-- Substituído "Create new account" por "coconut." -->
+        <div class="input-container-row">
+          <input name="fname" type="text" placeholder="Full Name" id="fullName" />
+        </div>
+        <div class="input-container">
+          <input name="lname" type="date" id="dateOfBirth" placeholder="Date of Birth" max="" required />
+        </div>
+        <div class="input-container">
+          <input type="text" placeholder="E-mail or Phone Number" id="emailOrPhone" />
+        </div>
+        <div class="input-container">
+          <input type="password" placeholder="Password" id="password" />
+        </div>
+        <div class="button-container">
+          <button class="register-button" onclick="register()">Register</button>
+          <p id="errorMessage" class="error-message">All fields are required.</p>
+        </div>
+        <div class="modal-footer"></div>
       </div>
-      <div class="input-container">
-        <input type="date" id="dateOfBirth" placeholder="Date of Birth" max="" required />
-      </div>
-      <div class="input-container">
-        <input type="text" placeholder="E-mail or Phone Number" id="emailOrPhone" />
-      </div>
-      <div class="input-container">
-        <input type="password" placeholder="Password" id="password" />
-      </div>
-      <div class="button-container">
-        <button class="register-button" onclick="register()">Register</button>
-        <p id="errorMessage" class="error-message">All fields are required.</p>
-      </div>
-      <div class="modal-footer"></div>
-    </div>
+    </form>
   </div>
 </body>
+
+<section class="register">
+  <div class="header">
+    <h3>Sign Up</h3>
+    <p>It's quick and easy</p>
+  </div>
+
+  <div class="body">
+    <form #form="ngForm">
+      <div class="user_name">
+        <input type="text" placeholder="FirstName" name="fname" ngModel>
+        <input type="text" placeholder="LastName" name="lname" ngModel>
+      </div>
+
+      <div class="email_password">
+        <input type="text" placeholder="Email" name="email" ngModel>
+        <input type="text" placeholder="Image Url" name="avatar" ngModel>
+        <input type="password" placeholder="Password" name="password" ngModel>
+      </div>
+
+      <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+
+      <button type="submit" class="submit-button" [mat-dialog-close]="form.value">Sign Up</button>
+    </form>
+  </div>
+</section>
 
 <!-- <mat-card class="login__header__right__card">
   <mat-card-content class="login__header__right__card__content">
